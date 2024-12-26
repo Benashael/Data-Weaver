@@ -141,7 +141,7 @@ if page == "🤖 Automatic Dataset Generator":
 
 # Page 3: Manual Dataset Generator
 elif page == "🛠️ Custom Dataset Generator":
-    st.title("🛠️ Custom Dataset Generator Page")
+    st.header("🛠️ Custom Dataset Generator Page")
 
     # Input number of fields (max 10)
     st.write("📋 **Enter the number of fields (max 10):**")
@@ -212,7 +212,7 @@ elif page == "🛠️ Custom Dataset Generator":
         st.write(generated_df.describe())
 
 elif page == "📊 Dataset for Classification (ML)":
-    st.title("Dataset for Classification (ML) Page 📊")
+    st.header("Dataset for Classification (ML) Page 📊")
 
     # Select type of output (binary class or multi-class)
     output_type = st.radio("🔄 Select the type of output:", ("Binary Class", "Multi-Class"))
@@ -439,7 +439,7 @@ elif page == "📊 Dataset for Classification (ML)":
 
 # Page 5: Dataset for Regression (ML)
 elif page == "📈 Dataset for Regression (ML)":
-    st.title("📊 Dataset for Regression (ML) Page")
+    st.header("📊 Dataset for Regression (ML) Page")
 
     # Select a regression dataset
     selected_dataset = st.selectbox("🔍 Select a regression dataset:", 
@@ -556,7 +556,7 @@ elif page == "📈 Dataset for Regression (ML)":
 
 # Page 6: Dataset for Clustering (ML)
 elif page == "🧩 Dataset for Clustering (ML)":
-    st.title("📊 Dataset for Clustering (ML) Page")
+    st.header("📊 Dataset for Clustering (ML) Page")
 
     # Select clustering dataset
     selected_dataset = st.selectbox("🔍 Select a clustered dataset:", 
@@ -679,7 +679,7 @@ elif page == "🧩 Dataset for Clustering (ML)":
 
 # Page 7: Dataset for Association (ML)
 elif page == "🔗 Dataset for Association (ML)":
-    st.title("📚 Dataset for Association (ML) Page")
+    st.header("📚 Dataset for Association (ML) Page")
 
     # Select association dataset
     selected_dataset = st.selectbox("🔍 Select an association dataset:", 
@@ -796,7 +796,7 @@ elif page == "🔗 Dataset for Association (ML)":
 
 # Page 7: Dataset Trimmer
 elif page == "✂️ Dataset Trimmer":
-    st.title("✂️ Dataset Trimmer Page")
+    st.header("✂️ Dataset Trimmer Page")
     
     # Upload a dataset
     uploaded_file = st.file_uploader("📤 Upload a Dataset (CSV format only):", type=["csv"])
