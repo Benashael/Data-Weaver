@@ -211,7 +211,7 @@ elif page == "🛠️ Custom Dataset Generator":
         st.subheader("📐 Summary Statistics:")
         st.write(generated_df.describe())
 
-elif page == "Dataset for Classification (ML)":
+elif page == "📊 Dataset for Classification (ML)":
     st.title("Dataset for Classification (ML) Page 📊")
 
     # Select type of output (binary class or multi-class)
@@ -438,7 +438,7 @@ elif page == "Dataset for Classification (ML)":
                     st.write(random_rows.tail())
 
 # Page 5: Dataset for Regression (ML)
-elif page == "Dataset for Regression (ML)":
+elif page == "📈 Dataset for Regression (ML)":
     st.title("📊 Dataset for Regression (ML) Page")
 
     # Select a regression dataset
@@ -555,7 +555,7 @@ elif page == "Dataset for Regression (ML)":
                 st.write(random_rows.tail())
 
 # Page 6: Dataset for Clustering (ML)
-elif page == "Dataset for Clustering (ML)":
+elif page == "🧩 Dataset for Clustering (ML)":
     st.title("📊 Dataset for Clustering (ML) Page")
 
     # Select clustering dataset
@@ -678,7 +678,7 @@ elif page == "Dataset for Clustering (ML)":
                 st.write(random_rows.tail())
 
 # Page 7: Dataset for Association (ML)
-elif page == "Dataset for Association (ML)":
+elif page == "🔗 Dataset for Association (ML)":
     st.title("📚 Dataset for Association (ML) Page")
 
     # Select association dataset
@@ -795,7 +795,7 @@ elif page == "Dataset for Association (ML)":
                 st.write(random_rows.tail())
 
 # Page 7: Dataset Trimmer
-elif page == "Dataset Trimmer":
+elif page == "✂️ Dataset Trimmer":
     st.title("✂️ Dataset Trimmer Page")
     
     # Upload a dataset
