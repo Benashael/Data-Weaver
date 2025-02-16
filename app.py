@@ -21,7 +21,8 @@ page = st.sidebar.radio(
         "📈 Dataset for Regression (ML)", 
         "🧩 Dataset for Clustering (ML)", 
         "🔗 Dataset for Association (ML)", 
-        "✂️ Dataset Trimmer"
+        "✂️ Dataset Trimmer",
+        "🔗 Quick Links"
     ]
 )
 
@@ -863,3 +864,18 @@ elif page == "✂️ Dataset Trimmer":
             st.warning("⚠️ The dataset exceeds the size limits (max rows: 5000, max columns: 50).")
     else:
         st.error("❌ Please upload a valid dataset to continue.")
+
+elif page == "🔗 Quick Links":
+    st.header("🔗 Quick Links")
+    st.write("Click on any link below to navigate to the respective application:")
+
+    links = {
+        "🤖 Model Craft": "https://modelcraft-uihxqxgjthmusarv6kscuz.streamlit.app/",
+        "🧙‍♂️ Vision Wizard": "https://vision-wizard-durnsdepglthkhzx2peekt.streamlit.app/",
+        "✍️ TextTrac": "https://texttrac-mmmj5kiucvh9muj66gekp4.streamlit.app/",
+        "🛠️ SkillSync": "https://skillsync-b8xdmwmdezbzf66qpbuj5j.streamlit.app/",
+        "💰 TradeLens": "https://glseycvc2rbucwhk3esh85.streamlit.app/"
+    }
+    
+    for name, url in links.items():
+        st.link_button(name, url, use_container_width=True)
